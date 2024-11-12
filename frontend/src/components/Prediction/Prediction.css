@@ -1,0 +1,55 @@
+.tourist-form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   max-width: 60%;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: transparent; /* Make the background fully transparent */
+   border-radius: 10px;
+   box-shadow: none; /* Remove shadow if fully transparent */
+}
+
+.tourist-form h1 {
+   font-weight: 500;
+   color: #262626;
+   font-size: 2em;
+   text-align: center;
+}
+
+.tourist-form p {
+   color: #808080;
+   font-size: 1em;
+   line-height: 1.5;
+   text-align: center;
+}
+
+.form-link {
+   display: inline-block;
+   margin: 20px auto;
+   padding: 12px 20px;
+   font-size: 1.2em;
+   font-weight: 500;
+   color: #ffffff;
+   background-color:  rgb(209, 86, 86);
+   text-align: center;
+   text-decoration: none;
+   border-radius: 20px;
+   transition: background-color 0.2s, transform 0.2s;
+   max-width: 300px;
+}
+
+.form-link:hover {
+   background-color:  rgb(142, 58, 58);
+   transform: translateY(-2px);
+}
+
+iframe {
+   border: none;
+   width: 100%;
+   max-width: 800px;
+   height: 600px;
+   margin-top: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
