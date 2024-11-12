@@ -8,6 +8,7 @@
    background-color: transparent; /* Make the background fully transparent */
    border-radius: 10px;
    box-shadow: none; /* Remove shadow if fully transparent */
+
 }
 
 .tourist-form h1 {
@@ -24,6 +25,7 @@
    text-align: center;
 }
 
+/* Original styles for .form-link */
 .form-link {
    display: inline-block;
    margin: 20px auto;
@@ -31,25 +33,26 @@
    font-size: 1.2em;
    font-weight: 500;
    color: #ffffff;
-   background-color:  rgb(209, 86, 86);
+   background-color: #808080;
    text-align: center;
    text-decoration: none;
    border-radius: 20px;
-   transition: background-color 0.2s, transform 0.2s;
+   transition: background-color 0.3s, color 0.3s, transform 0.3s;
    max-width: 300px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
 }
 
+/* Updated hover effect for .form-link */
 .form-link:hover {
-   background-color:  rgb(142, 58, 58);
-   transform: translateY(-2px);
+   background-color: #323232; /* Match the dark hover background color */
+   color: white; /* Change text color to white */
+   transform: scale(1.05); /* Slightly enlarge */
+   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Match hover shadow */
 }
 
-iframe {
-   border: none;
-   width: 100%;
-   max-width: 800px;
-   height: 600px;
-   margin-top: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Active (pressed) effect */
+.form-link:active {
+   transform: scale(0.98); /* Slightly shrink on click */
+   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Match active shadow */
 }

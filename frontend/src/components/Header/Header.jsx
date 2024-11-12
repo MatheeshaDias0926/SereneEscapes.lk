@@ -2,6 +2,15 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+94740956299"; // replace with your WhatsApp number
+    const message = "Hello! I'm interested in your tour packages."; // optional message
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappURL, "_blank");
+  };
+
   return (
     <div className="header">
       <div className="header-contents">
@@ -14,7 +23,7 @@ const Header = () => {
           exceptional Holiday Tour Packages, we’re dedicated to making every
           journey unforgettable.
         </p>
-        <button>Contact Us</button>
+        <button onClick={handleWhatsAppClick}>Contact Us</button>
       </div>
     </div>
   );
